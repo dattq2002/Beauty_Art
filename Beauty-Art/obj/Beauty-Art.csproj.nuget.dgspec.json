@@ -1,0 +1,247 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\LEARNING\\codeForMe\\C#\\Beauty-Art\\Beauty-Art\\Beauty-Art.csproj": {}
+  },
+  "projects": {
+    "D:\\LEARNING\\codeForMe\\C#\\Beauty-Art\\Beauty-Art.Domains\\Beauty-Art.Domains.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\LEARNING\\codeForMe\\C#\\Beauty-Art\\Beauty-Art.Domains\\Beauty-Art.Domains.csproj",
+        "projectName": "Beauty-Art.Domains",
+        "projectPath": "D:\\LEARNING\\codeForMe\\C#\\Beauty-Art\\Beauty-Art.Domains\\Beauty-Art.Domains.csproj",
+        "packagesPath": "C:\\Users\\meryc\\.nuget\\packages\\",
+        "outputPath": "D:\\LEARNING\\codeForMe\\C#\\Beauty-Art\\Beauty-Art.Domains\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\meryc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\LEARNING\\codeForMe\\C#\\Beauty-Art\\Beauty-Art.Repository\\Beauty-Art.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\LEARNING\\codeForMe\\C#\\Beauty-Art\\Beauty-Art.Repository\\Beauty-Art.Repository.csproj",
+        "projectName": "Beauty-Art.Repository",
+        "projectPath": "D:\\LEARNING\\codeForMe\\C#\\Beauty-Art\\Beauty-Art.Repository\\Beauty-Art.Repository.csproj",
+        "packagesPath": "C:\\Users\\meryc\\.nuget\\packages\\",
+        "outputPath": "D:\\LEARNING\\codeForMe\\C#\\Beauty-Art\\Beauty-Art.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\meryc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\LEARNING\\codeForMe\\C#\\Beauty-Art\\Beauty-Art.Domains\\Beauty-Art.Domains.csproj": {
+                "projectPath": "D:\\LEARNING\\codeForMe\\C#\\Beauty-Art\\Beauty-Art.Domains\\Beauty-Art.Domains.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\LEARNING\\codeForMe\\C#\\Beauty-Art\\Beauty-Art\\Beauty-Art.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\LEARNING\\codeForMe\\C#\\Beauty-Art\\Beauty-Art\\Beauty-Art.csproj",
+        "projectName": "Beauty-Art",
+        "projectPath": "D:\\LEARNING\\codeForMe\\C#\\Beauty-Art\\Beauty-Art\\Beauty-Art.csproj",
+        "packagesPath": "C:\\Users\\meryc\\.nuget\\packages\\",
+        "outputPath": "D:\\LEARNING\\codeForMe\\C#\\Beauty-Art\\Beauty-Art\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\meryc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\LEARNING\\codeForMe\\C#\\Beauty-Art\\Beauty-Art.Domains\\Beauty-Art.Domains.csproj": {
+                "projectPath": "D:\\LEARNING\\codeForMe\\C#\\Beauty-Art\\Beauty-Art.Domains\\Beauty-Art.Domains.csproj"
+              },
+              "D:\\LEARNING\\codeForMe\\C#\\Beauty-Art\\Beauty-Art.Repository\\Beauty-Art.Repository.csproj": {
+                "projectPath": "D:\\LEARNING\\codeForMe\\C#\\Beauty-Art\\Beauty-Art.Repository\\Beauty-Art.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[5.2.5, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[5.3.5, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+D:\LEARNING\codeForMe\C#\Beauty-Art\Beauty-Art.Repository\obj\Debug\net6.0\Beauty-Art.Repository.csproj.AssemblyReference.cache
+D:\LEARNING\codeForMe\C#\Beauty-Art\Beauty-Art.Repository\obj\Debug\net6.0\Beauty-Art.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\LEARNING\codeForMe\C#\Beauty-Art\Beauty-Art.Repository\obj\Debug\net6.0\Beauty-Art.Repository.AssemblyInfoInputs.cache
+D:\LEARNING\codeForMe\C#\Beauty-Art\Beauty-Art.Repository\obj\Debug\net6.0\Beauty-Art.Repository.AssemblyInfo.cs
+D:\LEARNING\codeForMe\C#\Beauty-Art\Beauty-Art.Repository\obj\Debug\net6.0\Beauty-Art.Repository.csproj.CoreCompileInputs.cache
+D:\LEARNING\codeForMe\C#\Beauty-Art\Beauty-Art.Repository\bin\Debug\net6.0\Beauty-Art.Repository.deps.json
+D:\LEARNING\codeForMe\C#\Beauty-Art\Beauty-Art.Repository\bin\Debug\net6.0\Beauty-Art.Repository.dll
+D:\LEARNING\codeForMe\C#\Beauty-Art\Beauty-Art.Repository\bin\Debug\net6.0\Beauty-Art.Repository.pdb
+D:\LEARNING\codeForMe\C#\Beauty-Art\Beauty-Art.Repository\bin\Debug\net6.0\Beauty-Art.Domains.dll
+D:\LEARNING\codeForMe\C#\Beauty-Art\Beauty-Art.Repository\bin\Debug\net6.0\Beauty-Art.Domains.pdb
+D:\LEARNING\codeForMe\C#\Beauty-Art\Beauty-Art.Repository\obj\Debug\net6.0\Beauty-Art.Repository.csproj.CopyComplete
+D:\LEARNING\codeForMe\C#\Beauty-Art\Beauty-Art.Repository\obj\Debug\net6.0\Beauty-Art.Repository.dll
+D:\LEARNING\codeForMe\C#\Beauty-Art\Beauty-Art.Repository\obj\Debug\net6.0\refint\Beauty-Art.Repository.dll
+D:\LEARNING\codeForMe\C#\Beauty-Art\Beauty-Art.Repository\obj\Debug\net6.0\Beauty-Art.Repository.pdb
+D:\LEARNING\codeForMe\C#\Beauty-Art\Beauty-Art.Repository\obj\Debug\net6.0\ref\Beauty-Art.Repository.dll
