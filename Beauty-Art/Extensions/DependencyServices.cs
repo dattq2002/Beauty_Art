@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using System.Text.Json.Serialization;
 using Beauty_Art.API.Constants;
 using Beauty_Art.Domains.Models;
 using Beauty_Art.Repository.Implement;
@@ -7,6 +8,7 @@ using Beauty_Art.Service.Implement;
 using Beauty_Art.Service.Interface;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
@@ -42,6 +44,7 @@ public static class DependencyServices
 		services.AddScoped<IPostService, PostService>();
 		services.AddScoped<IInstructorService, InstructorService>();
 		services.AddScoped<IWalletTypeService, WalletTypeService>();
+		services.AddScoped<IOrderService, OrderService>();
 
         #endregion
         return services;
@@ -103,8 +106,12 @@ public static class DependencyServices
 				Type = "string",
 				Format = "time",
 				Example = OpenApiAnyFactory.CreateFromJson("\"13:45:42.0000000\"")
-			});
-		});
+            });
+        });
+        services.AddControllers().AddJsonOptions(x =>
+		{
+            x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
+        });
 		return services;
 	}
 }
