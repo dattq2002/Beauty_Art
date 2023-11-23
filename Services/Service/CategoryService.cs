@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.IdentityModel.Tokens;
 using Services.Entity;
 using Services.Model;
 using Services.Service.Interface;
@@ -20,7 +21,7 @@ namespace Services.Service
         {
             Category category = new Category()
             {
-                Id = req.Id,
+                Id = req.Id.IsNullOrEmpty()? Guid.NewGuid().ToString() : req.Id,
                 Name = req.Name,
                 CreationDate = DateTime.Now,
                 IsDeleted = false,

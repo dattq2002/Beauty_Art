@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.IdentityModel.Tokens;
 using Services.Commons;
 using Services.Entity;
 using Services.Model;
@@ -18,7 +19,7 @@ namespace Services.Service
         {
             var course = new Course()
             {
-                Id = courseModel.Id,
+                Id = (courseModel.Id.IsNullOrEmpty())? Guid.NewGuid().ToString() : courseModel.Id,
                 title = courseModel.Title,
                 CourseDescription = courseModel.CourseDescription,
                 CreationDate = DateTime.Now,

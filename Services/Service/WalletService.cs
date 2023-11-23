@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.IdentityModel.Tokens;
 using Services.Entity;
 using Services.Enum;
 using Services.Model;
@@ -25,7 +26,7 @@ namespace Services.Service
         {
             Wallet wallet = new Wallet()
             {
-                Id = req.Id,
+                Id = req.Id.IsNullOrEmpty()? Guid.NewGuid().ToString() : req.Id,
                 Name = req.name,
                 CreationDate = DateTime.Now,
                 IsDeleted = false,
