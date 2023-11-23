@@ -102,7 +102,7 @@ namespace Services.Service
                     Category category = await _unitOfWork.categoryRepo.GetEntityByIdAsync(item.CategoryId);
                     item.Category = category;
                     //add list chapter to course
-                    List<Chapter> chapterss = (await _unitOfWork.chapterRepo.GetAllAsync()).ToList();
+                    List<Chapter> chapterss = (List<Chapter>)await _unitOfWork.chapterRepo.GetListAsync(x => x.CourseId.Equals(item.Id));
                     foreach (var chapter in chapterss)
                     {
                         if (chapter.CourseId == item.Id)
