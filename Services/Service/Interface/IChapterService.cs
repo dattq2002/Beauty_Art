@@ -16,5 +16,6 @@ namespace Services.Service.Interface
         Task<Chapter> GetChapterById(string id);
         Task<List<Chapter>> GetChaptersAsync();
         Task<bool> UpdateChapterStatus(string id);
+        Task<bool> UpdateUnPublishChapter(string id);
     }
 }

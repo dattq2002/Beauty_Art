@@ -12,5 +12,6 @@ namespace Services.Service
         Task<CourseResponse> GetCourseById(string id);
         Task<List<Course>> GetCoursesAsync();
         Task<bool> UpdateCourseStatus(string id);
+        Task<bool> UpdateUnPublishCourse(string id);
     }
 }

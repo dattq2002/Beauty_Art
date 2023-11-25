@@ -74,6 +74,22 @@ namespace Services.Service
             }
             return false;
         }
+        public async Task<bool> UpdateUnPublishCourse(string id)
+        {
+            var course = await _unitOfWork.courseRepo.GetEntityByIdAsync(id);
+            if (course == null)
+            {
+                return false;
+            }
+            course.IsPulished = false;
+            _unitOfWork.courseRepo.UpdateAsync(course);
+            var isSuccess = await _unitOfWork.SaveChangeAsync();
+            if (isSuccess > 0)
+            {
+                return true;
+            }
+            return false;
+        }
         public async Task<bool> DeleteCourse(string id)
         {
             Course course = await _unitOfWork.courseRepo.GetEntityByIdAsync(id);
