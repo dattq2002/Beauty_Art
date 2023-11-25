@@ -159,6 +159,7 @@ namespace Services.Service
             foreach (var item in userCourses)
             {
                 Course course = await _unitOfWork.courseRepo.GetEntityByIdAsync(item.CourseId);
+                course.Chapters = (List<Chapter>)await _unitOfWork.chapterRepo.GetListAsync(x => x.CourseId.Equals(course.Id));
                 if (course.IsDeleted == false)
                 {
                     courses.Add(course);
