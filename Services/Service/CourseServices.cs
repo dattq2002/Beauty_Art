@@ -152,6 +152,19 @@ namespace Services.Service
             }
             return result;
         }
-
-    }
+        public async Task<List<Course>> GetCourseByUserId(string userId)
+        {
+            List<UserCourse> userCourses = (List<UserCourse>)await _unitOfWork.userCourseRepo.GetListAsync(x => x.UserId.Equals(userId));
+            List<Course> courses = new List<Course>();
+            foreach (var item in userCourses)
+            {
+                Course course = await _unitOfWork.courseRepo.GetEntityByIdAsync(item.CourseId);
+                if (course.IsDeleted == false)
+                {
+                    courses.Add(course);
+                }
+            }
+            return courses;
+        }
+    } 
 }
