@@ -30,7 +30,7 @@ namespace Project.SWP.Controllers
         [HttpGet("TotalSale")]
         public async Task<IActionResult> TotalSale()
         {
-            int total = await _service.TotalSale();
+            var total = await _service.TotalSale();
             return Ok(total);
         }
     }

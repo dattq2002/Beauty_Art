@@ -1,4 +1,5 @@
 ﻿using Services.Entity;
+using Services.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,6 @@ namespace Services.Service.Interface
     {
         Task<List<Payment>> GetAllPayment();
         Task<Payment> GetPaymentById(string id);
-        Task<int> TotalSale();
+        Task<TotalSale> TotalSale();
     }
 }

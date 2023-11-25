@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Services.Entity;
+using Services.Model;
 using Services.Service.Interface;
 using System;
 using System.Collections.Generic;
@@ -29,15 +30,22 @@ namespace Services.Service
             Payment payment = await _unitOfWork.paymentRepo.GetEntityByIdAsync(id);
             return payment;
         }
-        public async Task<int> TotalSale()
+        public async Task<TotalSale> TotalSale()
         {
             List<Payment> paymentList = (await _unitOfWork.paymentRepo.GetAllAsync()).ToList();
             int total = 0;
+            int count = 0;
             foreach (var item in paymentList)
             {
                 total += (int) item.Balance;
+                count++;
             }
-            return total;
+            TotalSale totalSale = new TotalSale()
+            {
+                Total = total,
+                Count = count
+            };
+            return totalSale;
         }
     }
 }
