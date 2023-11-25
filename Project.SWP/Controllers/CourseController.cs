@@ -47,5 +47,11 @@ namespace Project.SWP.Controllers
             var result = await _courseServices.DeleteCourse(id);
             return Ok(result);
         }
+        [HttpPut]
+        public async Task<IActionResult> UpdateCourseStatus([FromQuery] string id)
+        {
+            var result = await _courseServices.UpdateCourseStatus(id);
+            return Ok(result);
+        }
     }
 }

@@ -54,6 +54,19 @@ namespace Services.Service
             int check = await _unitOfWork.SaveChangeAsync();
             return check > 0 ? true : false;
         }
+        public async Task<bool> UpdateChapterStatus(string id)
+        {
+            Chapter chapter = await _unitOfWork.chapterRepo.GetEntityByIdAsync(id);
+            if (chapter == null)
+            {
+                return false;
+            }
+            chapter.isPulished = true;
+            _unitOfWork.chapterRepo.UpdateAsync(chapter);
+            int check = await _unitOfWork.SaveChangeAsync();
+            return check > 0 ? true : false;
+        }
+
         public async Task<bool> DeleteChapter(string id)
         {
             Chapter chapter = await _unitOfWork.chapterRepo.GetEntityByIdAsync(id);

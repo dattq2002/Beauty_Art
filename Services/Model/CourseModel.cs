@@ -6,11 +6,11 @@ namespace Services.Model
 {
     public class CourseModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string CourseDescription { get; set; }
-        public decimal Price { get; set; }
-        public string imageUrl { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? CourseDescription { get; set; }
+        public decimal? Price { get; set; }
+        public string? imageUrl { get; set; }
         public bool isPublish { get; set; }
         public string CategoryId { get; set; }
     }

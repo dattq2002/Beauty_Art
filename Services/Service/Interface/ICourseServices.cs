@@ -11,5 +11,6 @@ namespace Services.Service
         Task<bool> DeleteCourse(string id);
         Task<CourseResponse> GetCourseById(string id);
         Task<List<Course>> GetCoursesAsync();
+        Task<bool> UpdateCourseStatus(string id);
     }
 }

@@ -19,11 +19,11 @@ namespace Services.Service
         {
             var course = new Course()
             {
-                Id = (courseModel.Id.IsNullOrEmpty())? Guid.NewGuid().ToString() : courseModel.Id,
+                Id = courseModel.Id.IsNullOrEmpty() ? Guid.NewGuid().ToString() : courseModel.Id,
                 title = courseModel.Title,
                 CourseDescription = courseModel.CourseDescription,
                 CreationDate = DateTime.Now,
-                Price = courseModel.Price,
+                Price = (decimal)courseModel.Price,
                 imageUrl = courseModel.imageUrl,
                 IsPulished = courseModel.isPublish,
                 IsDeleted = false,
@@ -45,12 +45,27 @@ namespace Services.Service
             {
                 return false;
             }
-            course.Id = courseModel.Id;
             course.title = courseModel.Title;
             course.CourseDescription = courseModel.CourseDescription;
-            course.Price = courseModel.Price;
+            course.Price = (decimal)courseModel.Price;
             course.imageUrl = courseModel.imageUrl;
             course.IsPulished = courseModel.isPublish;
+            _unitOfWork.courseRepo.UpdateAsync(course);
+            var isSuccess = await _unitOfWork.SaveChangeAsync();
+            if (isSuccess > 0)
+            {
+                return true;
+            }
+            return false;
+        }
+        public async Task<bool> UpdateCourseStatus(string id)
+        {
+            var course = await _unitOfWork.courseRepo.GetEntityByIdAsync(id);
+            if (course == null)
+            {
+                return false;
+            }
+            course.IsPulished = true;
             _unitOfWork.courseRepo.UpdateAsync(course);
             var isSuccess = await _unitOfWork.SaveChangeAsync();
             if (isSuccess > 0)
